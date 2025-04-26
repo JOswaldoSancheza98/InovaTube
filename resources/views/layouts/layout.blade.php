@@ -21,8 +21,8 @@
     <!-- Contenido del navbar -->
     <div class="collapse navbar-collapse" id="navbarContenido">
       <div class="ms-auto d-flex align-items-center gap-2">
-        <a href="login.php" class="btn btn-outline-light">Loguearse</a>
-        <a href="registro.php" class="btn btn-outline-light">Registrarse</a>
+        <a href="{{ route('usuario.login')}}" class="btn btn-outline-light">Loguearse</a>
+        <a href="{{ route('usuario.create' )}}" class="btn btn-outline-light">Registrarse</a>
 
         <div class="dropdown">
           <button class="btn btn-light dropdown-toggle text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
