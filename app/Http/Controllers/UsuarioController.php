@@ -27,7 +27,7 @@ class UsuarioController extends Controller
             //Almacena los datos en la tabla
             Usuario::create($datos);
 
-            return response()->json($datos);
+            return redirect('usuario') ->with("mensaje","El usuario se registro correctamente, ahora puede iniciar sesión");
         }
              
     }
